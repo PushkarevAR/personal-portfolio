@@ -1,0 +1,25 @@
+header{
+    position: relative;
+    height: 60px;
+    background-color: cadetblue;
+
+    nav{
+        margin-right: 60px;
+        float: right;
+        background-color: cornflowerblue;
+
+        li {
+            display: flex;
+            // text-decoration: none;
+
+            ul{
+                // text-decoration: none;
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
