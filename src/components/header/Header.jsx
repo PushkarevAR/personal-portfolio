@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.module.scss";
+import "./Header.module.scss";
 
 function Header() {
   return (
@@ -7,19 +7,19 @@ function Header() {
       <nav>
         <li>
           <ul>
-            <a href="#"></a>Home
+            <a href="/">Home</a>
           </ul>
           <ul>
-            <a href="#"></a>About
+            <a href="/">About</a>
           </ul>
           <ul>
-            <a href="#"></a>Skills
+            <a href="/">Skills</a>
           </ul>
           <ul>
-            <a href="#">Education</a>
+            <a href="/">Education</a>
           </ul>
           <ul>
-            <a href="#">GFX</a>
+            <a href="/">GFX</a>
           </ul>
         </li>
       </nav>

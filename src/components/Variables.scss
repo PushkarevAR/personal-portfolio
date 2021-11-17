@@ -1,0 +1,11 @@
+$title-font: 32px;
+$subtitle-font: 24px;
+$content-font: 16px;
+
+$background-color: #389c73;
+$foreground-color: #e2f1ff;
+
+@mixin sizes($height, $width) {
+  height: $height;
+  width: $width;
+}

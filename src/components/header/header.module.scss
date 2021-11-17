@@ -1,25 +1,36 @@
-header{
-    position: relative;
-    height: 60px;
-    background-color: cadetblue;
+@import "../Variables.scss";
 
-    nav{
-        margin-right: 60px;
-        float: right;
-        background-color: cornflowerblue;
+header {
+  @include sizes(60px, 100%);
 
-        li {
-            display: flex;
-            // text-decoration: none;
+  position: absolute;
+  top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
 
-            ul{
-                // text-decoration: none;
+  nav {
+    width: 720px;
 
-                a{
-                    text-decoration: none;
-                }
-            }
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      ul {
+        a {
+          padding-bottom: 6px;
+          text-decoration: none;
+          color: $foreground-color;
+          font-size: 24px;
+          font-weight: 400;
+
+          &:hover {
+            border-bottom: solid 2px $foreground-color;
+          }
         }
+      }
     }
-
+  }
 }

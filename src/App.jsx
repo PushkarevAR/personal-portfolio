@@ -1,12 +1,12 @@
 import "./App.scss";
 import Header from "./components/header/Header";
-import Home from "./components/section/Home";
+import Section from "./components/section/Section";
 
 function App() {
   return (
     <>
       <Header />
-      <Home />
+      <Section />
     </>
   );
 }

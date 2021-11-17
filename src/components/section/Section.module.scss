@@ -1,0 +1,18 @@
+@import '../Variables.scss';
+
+.section{
+    
+    @include sizes(100vh, 100%);
+
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+
+    section{
+        scroll-snap-align: center;
+    }
+}
