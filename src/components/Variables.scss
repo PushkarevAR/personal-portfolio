@@ -9,3 +9,9 @@ $foreground-color: #e2f1ff;
   height: $height;
   width: $width;
 }
+
+@mixin hovers {
+  color: $foreground-color;
+  background-color: $background-color;
+  box-shadow: inset 0 0 0 2px $foreground-color;
+}

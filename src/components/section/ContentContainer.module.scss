@@ -1,12 +1,12 @@
-@import "../../Variables.scss";
+@import "../Variables.scss";
 
-.about {
+.contentContainer {
   height: 100vh;
-  background-color: #b370b3;
+  background-color: $background-color;
   display: flex;
   align-items: center;
 
-  div {
+  & .container {
     width: 720px;
     margin: auto;
 
@@ -37,6 +37,12 @@
       font-weight: 200;
       margin-top: 24px;
       text-align: justify;
+    }
+
+    & .footer {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }

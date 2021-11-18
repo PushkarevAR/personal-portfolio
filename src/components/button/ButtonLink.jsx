@@ -3,7 +3,7 @@ import { buttonLink } from "./ButtonLink.module.scss";
 
 function ButtonLink(props) {
     return(
-        <a className={buttonLink} href={props.to}>{props.content}</a>
+        <a className={buttonLink} href={props.to} >{props.content}</a> //target="_blank"
     );
 }
 

@@ -4,7 +4,7 @@
     display: inline-block;
     @include sizes(auto, auto);
     margin-top: 12px;
-    margin-right: 12px;
+    margin-left: 12px;
     padding: 6px 12px;
     border-radius: 12px;
     text-align: center;
@@ -12,4 +12,8 @@
     text-decoration: none;
     background-color: $foreground-color;
     color: $background-color;
+
+    &:hover{
+        @include hovers();
+    }
 }
