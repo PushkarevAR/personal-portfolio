@@ -4,7 +4,7 @@
     
     @include sizes(100vh, 100%);
 
-    // scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
     overflow-y: auto;
 
     &::-webkit-scrollbar {

@@ -7,19 +7,19 @@ function Header() {
       <nav>
         <li>
           <ul>
-            <a href="/">Home</a>
+            <a href="#home">Home</a>
           </ul>
           <ul>
-            <a href="/">About</a>
+            <a href="#about">About</a>
           </ul>
           <ul>
-            <a href="/">Skills</a>
+            <a href="#skills">Skills</a>
           </ul>
           <ul>
-            <a href="/">Education</a>
+            <a href="#education">Education</a>
           </ul>
           <ul>
-            <a href="/">GFX</a>
+            <a href="#gfx">GFX</a>
           </ul>
         </li>
       </nav>

@@ -124,14 +124,19 @@ function Section() {
   return (
     <div className={section}>
       <ContentContainer
+        id="home"
         title={home.title}
         text={home.text}
         footer={home.footer}
       />
-      <ContentContainer title={about.title} text={about.text} />
-      <ContentContainer title={skills.title} text={skills.text} />
-      <ContentContainer title={education.title} text={education.text} />
-      <ContentContainer title={gfx.title} text={gfx.text} />
+      <ContentContainer id="about" title={about.title} text={about.text} />
+      <ContentContainer id="skills" title={skills.title} text={skills.text} />
+      <ContentContainer
+        id="education"
+        title={education.title}
+        text={education.text}
+      />
+      <ContentContainer id="gfx" title={gfx.title} text={gfx.text} />
     </div>
   );
 }
