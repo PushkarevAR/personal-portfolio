@@ -2,6 +2,8 @@ import React from "react";
 import ButtonLink from "../button/ButtonLink";
 import ContentContainer from "./ContentContainer";
 import Skill from "../skill/Skill";
+import Education from "../education/Education";
+import Gfx from "../gfx/Gfx";
 import { section } from "./Section.module.scss";
 
 const home = {
@@ -87,6 +89,37 @@ const skills = {
   ),
 };
 
+const education = {
+  title: <h3>Education</h3>,
+  text: (
+    <>
+      <Education
+        icon={<i className="fas fa-user-graduate"></i>}
+        title={"Master - Information security"}
+        university={
+          "Peter the Great St. Petersburg Polytechnic University 2019-2021"
+        }
+        description={
+          "Graduation project: The Usage of post-quantum cryptography protocols in edge computing systems. \n Fav projects: Software for Ad-Hoc network with pre-fractal topology."
+        }
+      />
+      <Education
+        icon={<i className="fas fa-university"></i>}
+        title={"Bachelor - Information technologies and communication systems"}
+        university={"Southern Federal University 2015-2019"}
+        description={
+          "Graduation project: The model of the communication channel with differential quadrature phase shift keying in the ADS. \n Fav projects: precision inclinometer sensor interface software (C#), quadcopter flight controller programming (C++)."
+        }
+      />
+    </>
+  ),
+};
+
+const gfx = {
+  title: <h3>GFX</h3>,
+  text: <Gfx />,
+};
+
 function Section() {
   return (
     <div className={section}>
@@ -96,11 +129,9 @@ function Section() {
         footer={home.footer}
       />
       <ContentContainer title={about.title} text={about.text} />
-      <ContentContainer
-        title={skills.title}
-        text={skills.text}
-        footer={""}
-      />
+      <ContentContainer title={skills.title} text={skills.text} />
+      <ContentContainer title={education.title} text={education.text} />
+      <ContentContainer title={gfx.title} text={gfx.text} />
     </div>
   );
 }

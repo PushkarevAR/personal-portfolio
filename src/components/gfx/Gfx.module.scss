@@ -1,0 +1,11 @@
+@import "../Variables.scss";
+
+.gfx{
+    color: $foreground-color;
+    font-size: 320px;
+    text-align: center;
+
+    #description{
+        text-align: center;
+    }
+}

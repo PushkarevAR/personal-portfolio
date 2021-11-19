@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ContentContainer.module.scss"; //{ style } from
+import styles from "./ContentContainer.module.scss";
 
 function ContentContainer(props) {
   return (
@@ -7,9 +7,7 @@ function ContentContainer(props) {
       <article className={styles.content}>
         {props.title}
         {props.text}
-        <div className={styles.footer}>
-          {props.footer}
-        </div>
+        <div className={styles.footer}>{props.footer}</div>
       </article>
     </section>
   );

@@ -1,0 +1,37 @@
+@import "../Variables.scss";
+
+.education {
+  margin: 24px 0;
+  border-radius: 12px;
+
+  .header {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0 2px $foreground-color;
+    cursor: pointer;
+
+    .headerLeft {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      line-height: 24px;
+    }
+
+    .arrow {
+      transform: rotate(90deg);
+    }
+
+    i {
+      color: $foreground-color;
+      font-size: 32px;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}

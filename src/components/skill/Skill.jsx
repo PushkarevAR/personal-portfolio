@@ -1,12 +1,12 @@
 import React from "react";
-import { skill } from "./Skill.module.scss";
+import styles from "./Skill.module.scss";
 
 function Skill(props) {
     return(
-        <article className={skill}>
-            <div className="icon">{props.icon}</div>
-            <p>{props.title}</p>
-        </article>
+        <div className={styles.skill}>
+            {props.icon}
+            {props.title}
+        </div>
     );
 }
 
