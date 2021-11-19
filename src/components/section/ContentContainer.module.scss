@@ -1,12 +1,12 @@
 @import "../Variables.scss";
 
-.contentContainer {
+.container {
   height: 100vh;
   background-color: $background-color;
   display: flex;
   align-items: center;
 
-  & .container {
+  & .content {
     width: 720px;
     margin: auto;
 

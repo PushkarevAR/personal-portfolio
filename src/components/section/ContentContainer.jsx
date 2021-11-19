@@ -1,13 +1,13 @@
 import React from "react";
-import { style } from "./ContentContainer.module.scss";
+import styles from "./ContentContainer.module.scss"; //{ style } from
 
 function ContentContainer(props) {
   return (
-    <section className={style}>
-      <article className={"container"}>
+    <section className={styles.container}>
+      <article className={styles.content}>
         {props.title}
         {props.text}
-        <div className="footer">
+        <div className={styles.footer}>
           {props.footer}
         </div>
       </article>

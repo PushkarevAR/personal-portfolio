@@ -99,7 +99,7 @@ function Section() {
       <ContentContainer
         title={skills.title}
         text={skills.text}
-        footer={skills.footer}
+        footer={""}
       />
     </div>
   );
