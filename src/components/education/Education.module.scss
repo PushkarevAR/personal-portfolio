@@ -4,6 +4,24 @@
   margin: 24px 0;
   border-radius: 12px;
 
+  &.active {
+    p {
+      display: block;
+    }
+    .arrow {
+      transform: rotate(0deg);
+    }
+  }
+
+  &.hidden {
+    p {
+      display: none;
+    }
+    .arrow {
+      transform: rotate(90deg);
+    }
+  }
+
   .header {
     padding: 12px;
     display: flex;
@@ -19,10 +37,10 @@
       align-items: center;
       gap: 24px;
       line-height: 24px;
-    }
 
-    .arrow {
-      transform: rotate(90deg);
+      h5{
+        color: $foreground-color;
+      }
     }
 
     i {
@@ -31,7 +49,7 @@
     }
 
     &:hover {
-      transform: scale(1.02);
+      @include hover-size();
     }
   }
 }

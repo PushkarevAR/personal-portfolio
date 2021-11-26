@@ -2,13 +2,18 @@
 
 .container {
   height: 100vh;
-  background-color: $background-color;
   display: flex;
   align-items: center;
+
+  // background-color: $foreground-red-color;
+  // // -webkit-mask-image: url(icon.svg);
+  // mask: url(../../img/home.svg) no-repeat 50% 50%;
 
   & .content {
     width: 720px;
     margin: auto;
+    z-index: 2;
+    // backdrop-filter: blur(12px);
 
     h3,
     h4,
@@ -28,8 +33,10 @@
     }
 
     h5 {
+      margin-top: 4px;
       font-size: 24px;
       font-weight: 400;
+      color: $foreground-green-color;
     }
 
     p {
@@ -46,4 +53,15 @@
       justify-content: flex-end;
     }
   }
+
+  // & .back{
+  //   position: fixed;
+  //   color: $foreground-red-color;
+  //   font-size: 700px;
+  //   bottom: -90px;
+  //   left: -50px;
+  //   filter: blur(1px);
+  //   z-index: 1;
+  //   overflow: hidden;
+  // }
 }

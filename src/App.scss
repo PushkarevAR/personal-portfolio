@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 * {
@@ -7,4 +8,20 @@ html {
   padding: 0;
   box-sizing: border-box;
   transition: all 0.2s ease;
+}
+
+#home{
+  background: url(./img/home.svg) no-repeat -190px 40px;
+}
+
+#about{
+  background: url(./img/about.svg) no-repeat 1200px 0px;
+}
+
+#education{
+  background: url(./img/education.svg) no-repeat -300px 200px;
+}
+
+#skills{
+  background: url(./img/skills.svg) no-repeat -100px 240px;
 }

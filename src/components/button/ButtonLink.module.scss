@@ -3,17 +3,20 @@
 .buttonLink{
     display: inline-block;
     @include sizes(auto, auto);
+
     margin-top: 12px;
     margin-left: 12px;
+
     padding: 6px 12px;
     border-radius: 12px;
     text-align: center;
     font-size: 24px;
     text-decoration: none;
-    background-color: $foreground-color;
-    color: $background-color;
+
+    background-color: $foreground-green-color;
+    color: $foreground-color;
 
     &:hover{
-        @include hovers();
+        @include hover-btn();
     }
 }

@@ -2,16 +2,45 @@ $title-font: 32px;
 $subtitle-font: 24px;
 $content-font: 16px;
 
-$background-color: #389c73;
-$foreground-color: #e2f1ff;
+$background-color: #29333c;
+$foreground-color: #f9f1f0;
+$foreground-red-color: #d93b49;
+$foreground-green-color: #6a8874;
 
 @mixin sizes($height, $width) {
   height: $height;
   width: $width;
 }
 
-@mixin hovers {
+@mixin hover-btn {
   color: $foreground-color;
-  background-color: $background-color;
+  background-color: transparent;
   box-shadow: inset 0 0 0 2px $foreground-color;
+}
+
+@mixin hover-border {
+  box-shadow: inset 0 0 0 2px $foreground-color;
+}
+
+@mixin hover-size {
+  transform: scale(1.02);
+}
+
+@mixin background {
+	background: linear-gradient(-12deg, #29333c, #252e36, #1d242a, #101418);
+	background-size: 400% 400%;
+	animation: gradient 16s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

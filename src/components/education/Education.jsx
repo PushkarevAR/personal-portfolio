@@ -1,10 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Education.module.scss";
 
 function Education(props) {
+  const [isActive, setActive] = useState(false);
+
+  let clickEducation = () => {
+    setActive(!isActive);
+  };
+
+  let styleEducation = `${styles.education} ${isActive ? styles.active : styles.hidden}`;
+
+
   return (
-    <article className={styles.education}>
-      <div className={styles.header}>
+    <article className={styleEducation}>
+      <div className={styles.header} onClick={clickEducation}>
         <div className={styles.headerLeft}>
           {props.icon}
           <h5>{props.title}</h5>
