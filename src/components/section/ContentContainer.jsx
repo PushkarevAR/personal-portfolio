@@ -9,7 +9,9 @@ function ContentContainer(props) {
         {props.text}
         <div className={styles.footer}>{props.footer}</div>
       </article>
-      {/* <i className={`fas fa-user-astronaut ${styles.back}`}></i> */}
+      <div className={styles.back}>
+          <img src={props.pic} alt="kek" />
+        </div>
     </section>
   );
 }

@@ -6,6 +6,11 @@ import Education from "../education/Education";
 import Gfx from "../gfx/Gfx";
 import { section } from "./Section.module.scss";
 
+import picHome from "../../img/home.svg";
+import picAbout from "../../img/about.svg";
+import picSkills from "../../img/skills.svg";
+import picEducation from "../../img/education.svg";
+
 const home = {
   title: (
     <>
@@ -43,6 +48,7 @@ const home = {
       />
     </>
   ),
+  pic: picHome,
 };
 
 const about = {
@@ -61,6 +67,7 @@ const about = {
       </p>
     </>
   ),
+  pic: picAbout,
 };
 
 const skills = {
@@ -87,6 +94,7 @@ const skills = {
       />
     </>
   ),
+  pic: picSkills,
 };
 
 const education = {
@@ -113,6 +121,7 @@ const education = {
       />
     </>
   ),
+  pic: picEducation,
 };
 
 const gfx = {
@@ -128,13 +137,15 @@ function Section() {
         title={home.title}
         text={home.text}
         footer={home.footer}
+        pic={home.pic}
       />
-      <ContentContainer id="about" title={about.title} text={about.text} />
-      <ContentContainer id="skills" title={skills.title} text={skills.text} />
+      <ContentContainer id="about" title={about.title} text={about.text} pic={about.pic}/>
+      <ContentContainer id="skills" title={skills.title} text={skills.text} pic={skills.pic}/>
       <ContentContainer
         id="education"
         title={education.title}
         text={education.text}
+        pic={education.pic}
       />
       <ContentContainer id="gfx" title={gfx.title} text={gfx.text} />
     </div>

@@ -10,18 +10,30 @@ html {
   transition: all 0.2s ease;
 }
 
+@mixin background-img ($h, $w, $bottom, $left){
+  height: $h;
+  width: $w;
+  bottom: $bottom;
+  left: $left;
+}
+
 #home{
-  background: url(./img/home.svg) no-repeat -190px 40px;
+  img{
+    @include background-img(800px, 800px, -320px, -1080px);
+  }
 }
-
 #about{
-  background: url(./img/about.svg) no-repeat 1200px 0px;
+  img{
+    @include background-img(800px, 800px, -420px, 220px);
+  }
 }
-
-#education{
-  background: url(./img/education.svg) no-repeat -300px 200px;
-}
-
 #skills{
-  background: url(./img/skills.svg) no-repeat -100px 240px;
+  img{
+    @include background-img(800px, 800px, -520px, -1060px);
+  }
+}
+#education{
+  img{
+    @include background-img(800px, 800px, -580px, 260px);
+  }
 }

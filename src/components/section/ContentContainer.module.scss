@@ -3,17 +3,14 @@
 .container {
   height: 100vh;
   display: flex;
-  align-items: center;
-
-  // background-color: $foreground-red-color;
-  // // -webkit-mask-image: url(icon.svg);
-  // mask: url(../../img/home.svg) no-repeat 50% 50%;
+  overflow: hidden;
+  position: relative;
 
   & .content {
     width: 720px;
     margin: auto;
     z-index: 2;
-    // backdrop-filter: blur(12px);
+    // position: relative;
 
     h3,
     h4,
@@ -54,14 +51,15 @@
     }
   }
 
-  // & .back{
-  //   position: fixed;
-  //   color: $foreground-red-color;
-  //   font-size: 700px;
-  //   bottom: -90px;
-  //   left: -50px;
-  //   filter: blur(1px);
-  //   z-index: 1;
-  //   overflow: hidden;
-  // }
+  & .back {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    z-index: 1;
+
+    img{
+      position: absolute;
+      filter: blur(.5px);
+    }
+  }
 }
