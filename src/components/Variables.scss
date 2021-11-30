@@ -25,22 +25,3 @@ $foreground-green-color: #6a8874;
 @mixin hover-size ($scale: 1.02){
   transform: scale($scale);
 }
-
-@mixin background {
-	background: linear-gradient(-12deg, #3c2936, #252e36, #1d242a, #101418);
-	background-size: 400% 400%;
-	animation: gradient 16s ease infinite;
-	height: 100vh;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}

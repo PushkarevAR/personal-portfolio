@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.module.scss";
+import ButtonScrollTo from "../button/ButtonScrollTo";
 
 function Header() {
   return (
@@ -7,19 +8,24 @@ function Header() {
       <nav>
         <li>
           <ul>
-            <a href="#home">Home</a>
+            <ButtonScrollTo toId="home"> Home </ButtonScrollTo>
+            {/* <a href="#home">Home</a> */}
           </ul>
           <ul>
-            <a href="#about">About</a>
+            <ButtonScrollTo toId="about"> About </ButtonScrollTo>
+            {/* <a href="#about">About</a> */}
           </ul>
           <ul>
-            <a href="#skills">Skills</a>
+            <ButtonScrollTo toId="skills"> Skills </ButtonScrollTo>
+            {/* <a href="#skills">Skills</a> */}
           </ul>
           <ul>
-            <a href="#education">Education</a>
+            <ButtonScrollTo toId="education"> Education </ButtonScrollTo>
+            {/* <a href="#education">Education</a> */}
           </ul>
           <ul>
-            <a href="#gfx">GFX</a>
+            <ButtonScrollTo toId="gfx"> GFX </ButtonScrollTo>
+            {/* <a href="#gfx">GFX</a> */}
           </ul>
         </li>
       </nav>

@@ -1,10 +1,13 @@
 import React from "react";
+
 import ButtonLink from "../button/ButtonLink";
 import ContentContainer from "./ContentContainer";
 import Skill from "../skill/Skill";
 import Education from "../education/Education";
 import Gfx from "../gfx/Gfx";
-import { section } from "./Section.module.scss";
+// import Header from "../header/Header";
+
+import styles from "./Section.module.scss";
 
 import picHome from "../../img/home.svg";
 import picAbout from "../../img/about.svg";
@@ -131,23 +134,53 @@ const gfx = {
 
 function Section() {
   return (
-    <div className={section}>
+    <div className={styles.section}>
+      {/* <Header /> */}
       <ContentContainer
         id="home"
         title={home.title}
         text={home.text}
         footer={home.footer}
         pic={home.pic}
+        onRight={true}
+        upId="gfx"
+        downId="about"
       />
-      <ContentContainer id="about" title={about.title} text={about.text} pic={about.pic}/>
-      <ContentContainer id="skills" title={skills.title} text={skills.text} pic={skills.pic}/>
+      <ContentContainer
+        id="about"
+        title={about.title}
+        text={about.text}
+        pic={about.pic}
+        onRight={false}
+        upId="home"
+        downId="skills"
+      />
+      <ContentContainer
+        id="skills"
+        title={skills.title}
+        text={skills.text}
+        pic={skills.pic}
+        onRight={true}
+        upId="about"
+        downId="education"
+      />
       <ContentContainer
         id="education"
         title={education.title}
         text={education.text}
         pic={education.pic}
+        onRight={false}
+        upId="skills"
+        downId="gfx"
       />
-      <ContentContainer id="gfx" title={gfx.title} text={gfx.text} />
+      <ContentContainer
+        id="gfx"
+        title={gfx.title}
+        text={gfx.text}
+        onRight={true}
+        upId="education"
+        downId="home"
+      />
     </div>
   );
 }

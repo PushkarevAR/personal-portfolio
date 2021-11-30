@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
+  // overflow: auto; //here
 }
 
 * {
@@ -8,6 +8,29 @@ html {
   padding: 0;
   box-sizing: border-box;
   transition: all 0.2s ease;
+}
+
+@mixin background {
+	background: linear-gradient(-12deg, #3c2936, #252e36, #1d242a, #101418);
+	background-size: 400% 400%;
+	// animation: gradient 16s ease infinite; // laggy
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body {
+  @include background();
 }
 
 @mixin background-img ($h, $w, $bottom, $left){

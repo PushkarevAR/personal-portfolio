@@ -1,11 +1,10 @@
 @import '../Variables.scss';
 
 .section{
-    @include background();
     @include sizes(100vh, 100%);
 
     // scroll-snap-type: y block;
-    overflow-y: hidden;
+    // overflow-y: auto;
 
     // &::-webkit-scrollbar {
     //     width: 0;

@@ -9,7 +9,7 @@ function ContentContainer(props) {
         {props.title}
         {props.text}
         <div className={styles.footer}>{props.footer}</div>
-        <ButtonScroll />
+        <ButtonScroll position={props.onRight} upId={props.upId} downId={props.downId}/>
       </article>
       <div className={styles.back}>
         <img src={props.pic ? props.pic : ""} alt="kek" />

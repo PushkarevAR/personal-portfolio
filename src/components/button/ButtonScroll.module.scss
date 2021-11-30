@@ -4,9 +4,13 @@
     @include sizes(30px, 30px);
     position: absolute;
     bottom: 0;
-    font-size: 64px;
-    color: $foreground-red-color;
-    // background-color: green;
+
+    button{
+        font-size: 64px;
+        color: $foreground-red-color;
+        background: transparent;
+        border: none;
+    }
 
     i{
         position: absolute;
@@ -14,6 +18,10 @@
 
         &.right{
             left: 800px;
+        }
+
+        &.left{
+            left: -120px;
         }
 
         &.up{

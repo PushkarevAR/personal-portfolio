@@ -3,7 +3,7 @@
 header {
   @include sizes(60px, 100%);
 
-  position: absolute;
+  position: fixed;
   top: 5vh;
   display: flex;
   align-items: center;
@@ -28,7 +28,16 @@ header {
           font-size: 24px;
           font-weight: 400;
         }
-
+        button {
+          padding: 3px 0;
+          text-decoration: none;
+          color: $foreground-color;
+          background-color: transparent;
+          border: none;
+          font-size: 24px;
+          font-weight: 400;
+          cursor: pointer;
+        }
         &:hover {
           @include hover-border();
         }
