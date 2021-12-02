@@ -17,19 +17,45 @@
         cursor: pointer;
 
         &.right{
-            left: 800px;
+            left: 780px;
+            @media (max-width: 1000px) {
+                left: 0;
+            }
+            &.up{
+                bottom: 55vh;
+                @media (max-width: 1000px) {
+                    bottom: 60px;
+                }
+            }
+    
+            &.down{
+                bottom: 45vh;
+                @media (max-width: 1000px) {
+                    bottom: 60px;
+                    left: 64px;
+                }
+            }
         }
 
         &.left{
-            left: -120px;
-        }
-
-        &.up{
-            bottom: 55vh;
-        }
-
-        &.down{
-            bottom: 45vh;
+            left: -100px;
+            @media (max-width: 1000px) {
+                left: 0;
+            }
+            &.up{
+                bottom: 55vh;
+                @media (max-width: 1000px) {
+                    bottom: 60px;
+                }
+            }
+    
+            &.down{
+                bottom: 45vh;
+                @media (max-width: 1000px) {
+                    bottom: 60px;
+                    left: 64px;
+                }
+            }
         }
 
         &:hover{

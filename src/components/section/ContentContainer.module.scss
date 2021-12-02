@@ -7,10 +7,10 @@
   position: relative;
 
   & .content {
-    width: 720px;
+    width: 740px;
     margin: auto;
+    padding: 0 20px;
     z-index: 2;
-    // position: relative;
 
     h3,
     h4,
@@ -20,24 +20,24 @@
     }
 
     h3 {
-      font-size: 72px;
+      font-size: $h3-font;
       line-height: 64px;
     }
 
     h4 {
-      font-size: 72px;
+      font-size: $h3-font;
       line-height: 64px;
     }
 
     h5 {
       margin-top: 4px;
-      font-size: 24px;
+      font-size: $p-font;
       font-weight: 400;
       color: $foreground-green-color;
     }
 
     p {
-      font-size: 24px;
+      font-size: $p-font;
       font-weight: 200;
       margin-top: 24px;
       text-align: justify;

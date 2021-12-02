@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  // overflow: auto; //here
+  overflow: hidden;
 }
 
 * {
@@ -11,52 +11,52 @@ html {
 }
 
 @mixin background {
-	background: linear-gradient(-12deg, #3c2936, #252e36, #1d242a, #101418);
-	background-size: 400% 400%;
-	// animation: gradient 16s ease infinite; // laggy
-	height: 100vh;
+  background: linear-gradient(-12deg, #101418, #1d242a, #29333c, #252e36);
+  background-size: 100% 900%;
+  animation: gradient 16s ease infinite; // laggy
+  height: 100vh;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body {
   @include background();
 }
 
-@mixin background-img ($h, $w, $bottom, $left){
+@mixin background-img($h, $w, $bottom, $left) {
   height: $h;
   width: $w;
   bottom: $bottom;
   left: $left;
 }
 
-#home{
-  img{
+#home {
+  img {
     @include background-img(800px, 800px, -320px, -1080px);
   }
 }
-#about{
-  img{
+#about {
+  img {
     @include background-img(800px, 800px, -420px, 220px);
   }
 }
-#skills{
-  img{
+#skills {
+  img {
     @include background-img(800px, 800px, -520px, -1060px);
   }
 }
-#education{
-  img{
+#education {
+  img {
     @include background-img(800px, 800px, -580px, 260px);
   }
 }
