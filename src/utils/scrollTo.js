@@ -22,6 +22,18 @@ export const scrollTo = ({ id, ref = null, duration = 3000 }) => {
     return;
   }
   
+  // styling active nav 
+  const activeUl = document.querySelector("ul.active");
+  activeUl ? activeUl.classList.remove("active") : console.log("no active uls");
+  const nextActiveUl = document.querySelector(`#ul-${id}`);
+  nextActiveUl.classList.add("active");
+
+  // close mobile nav
+  const btns = document.querySelector("header").querySelectorAll("button");
+  const closeBtn = btns[btns.length-1];
+  closeBtn.click();
+
+
   animateScroll({
     targetPosition: getElementPosition(element),
     initialPosition,
