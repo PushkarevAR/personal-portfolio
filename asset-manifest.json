@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio/static/css/main.c83f53d4.chunk.css",
+    "main.js": "/personal-portfolio/static/js/main.5a7ec14e.chunk.js",
+    "main.js.map": "/personal-portfolio/static/js/main.5a7ec14e.chunk.js.map",
+    "runtime-main.js": "/personal-portfolio/static/js/runtime-main.fd11a133.js",
+    "runtime-main.js.map": "/personal-portfolio/static/js/runtime-main.fd11a133.js.map",
+    "static/js/2.e79ff7b5.chunk.js": "/personal-portfolio/static/js/2.e79ff7b5.chunk.js",
+    "static/js/2.e79ff7b5.chunk.js.map": "/personal-portfolio/static/js/2.e79ff7b5.chunk.js.map",
+    "index.html": "/personal-portfolio/index.html",
+    "static/css/main.c83f53d4.chunk.css.map": "/personal-portfolio/static/css/main.c83f53d4.chunk.css.map",
+    "static/js/2.e79ff7b5.chunk.js.LICENSE.txt": "/personal-portfolio/static/js/2.e79ff7b5.chunk.js.LICENSE.txt",
+    "static/media/about.3cef0f70.svg": "/personal-portfolio/static/media/about.3cef0f70.svg",
+    "static/media/education.70d82cc3.svg": "/personal-portfolio/static/media/education.70d82cc3.svg",
+    "static/media/home.ab1eb0db.svg": "/personal-portfolio/static/media/home.ab1eb0db.svg",
+    "static/media/skills.e276d9d2.svg": "/personal-portfolio/static/media/skills.e276d9d2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd11a133.js",
+    "static/js/2.e79ff7b5.chunk.js",
+    "static/css/main.c83f53d4.chunk.css",
+    "static/js/main.5a7ec14e.chunk.js"
+  ]
+}
