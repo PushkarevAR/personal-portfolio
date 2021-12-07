@@ -18,7 +18,8 @@ header {
     &.openHeader {
       width: 100vw;
       left: 0;
-      background-color: rgba(0, 0, 0, 0.692);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.342);
     }
   }
 
