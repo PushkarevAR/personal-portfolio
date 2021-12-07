@@ -10,7 +10,7 @@ header {
   justify-content: center;
   z-index: 99;
 
-  @media (max-width: 1000px) {
+  @media (max-width: $content-width) {
     @include sizes(100vh, 0);
     top: 0;
     left: -200px;
@@ -23,7 +23,6 @@ header {
   }
 
   #closeBtn {
-    // @include sizes(32px, 120px);
     font-size: 48px;
     color: $foreground-red-color;
     background-color: transparent;
@@ -35,13 +34,12 @@ header {
     &.openBtn {
       left: auto;
       right: 24px;
-      // left: calc(200px + 12px + 60%);
     }
-    @media (min-width: 1000px) {
+    @media (min-width: $content-width) {
       display: none;
     }
 
-    i{
+    i {
       cursor: pointer;
     }
   }
@@ -54,7 +52,7 @@ header {
       display: flex;
       justify-content: space-between;
 
-      @media (max-width: 1000px) {
+      @media (max-width: $content-width) {
         padding-left: 12px;
         flex-direction: column;
         width: 200px;
@@ -68,8 +66,9 @@ header {
           padding-bottom: 6px;
           text-decoration: none;
           color: $foreground-color;
-          font-size: 24px;
+          font-size: $p-font;
           font-weight: 400;
+          @include p-mobile();
         }
         button {
           padding: 3px 0;
@@ -77,9 +76,10 @@ header {
           color: $foreground-color;
           background-color: transparent;
           border: none;
-          font-size: 24px;
+          font-size: $p-font;
           font-weight: 400;
           cursor: pointer;
+          @include p-mobile();
         }
         &:hover {
           @include hover-border();

@@ -1,8 +1,11 @@
-$h3-font: 72px;
-$h4-font: 72px;
-$h5-font: 24px;
+$h-font: 72px;
 $p-font: 24px;
-
+$content-width: 760px;
+// mobile
+$h-font-mobile: .75 * 72px;
+$p-font-mobile: .75 * 24px;
+$mobile-width: 600px;
+//colors
 $background-color: #29333c;
 $foreground-color: #f9f1f0;
 $foreground-color-alpha: #f9f1f02f;
@@ -34,3 +37,14 @@ $foreground-green-color: #6a8874;
   }
 }
 
+@mixin p-mobile {
+  @media (max-width: $mobile-width) {
+    font-size: $p-font-mobile;
+  }
+}
+
+@mixin h-mobile {
+  @media (max-width: $mobile-width) {
+    font-size: $h-font-mobile;
+  }
+}

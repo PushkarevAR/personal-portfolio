@@ -10,7 +10,8 @@
     padding: 6px 12px;
     border-radius: 12px;
     text-align: center;
-    font-size: 24px;
+    font-size: $p-font;
+    @include p-mobile();
     text-decoration: none;
 
     background-color: $foreground-green-color;

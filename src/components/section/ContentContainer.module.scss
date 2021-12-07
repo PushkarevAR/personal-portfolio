@@ -7,33 +7,35 @@
   position: relative;
 
   & .content {
-    width: 760px;
+    width: $content-width;
     margin: auto;
     padding: 0 20px;
     z-index: 2;
 
     h3,
     h4,
-    h5,
     p {
       color: $foreground-color;
     }
 
-    h3 {
-      font-size: $h3-font;
+    h3,
+    h4 {
+      font-size: $h-font;
       line-height: 64px;
+      @include h-mobile();
     }
 
-    h4 {
-      font-size: $h3-font;
-      line-height: 64px;
-    }
+    // h4 {
+    //   font-size: $h3-font;
+    //   line-height: 64px;
+    // }
 
     h5 {
       margin-top: 4px;
       font-size: $p-font;
       font-weight: 400;
       color: $foreground-green-color;
+      @include p-mobile();
     }
 
     p {
@@ -42,6 +44,7 @@
       margin-top: 24px;
       text-align: justify;
       white-space: pre-line;
+      @include p-mobile();
     }
 
     & .footer {
@@ -57,9 +60,9 @@
     left: 50%;
     z-index: 1;
 
-    img{
+    img {
       position: absolute;
-      filter: blur(.5px);
+      filter: blur(0.5px);
     }
   }
 }

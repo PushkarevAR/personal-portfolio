@@ -5,13 +5,12 @@
   margin: 24px 0;
   border-radius: 12px;
   box-shadow: inset 0 0 0 2px $foreground-color;
-  // background-color: $background-color;
 
-  font-size: 24px;
+  font-size: $p-font;
+  @include p-mobile();
   color: $foreground-color;
   display: flex;
   align-items: center;
-
   cursor: default;
 
   & i{
@@ -21,5 +20,10 @@
 
   &:hover{
     @include hover-size();
+  }
+
+  @media (max-width: $mobile-width) {
+    @include sizes(0.75*60px, 100%);
+    margin: 12px 0;
   }
 }

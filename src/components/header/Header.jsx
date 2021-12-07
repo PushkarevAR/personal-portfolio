@@ -20,8 +20,12 @@ function Header() {
     setActive({ ...deactivateState, [current]: true });
   };
 
-  const [isOpen, setOpen] = useState(true);
-  const closeBtnIcon = isOpen ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>;
+  const [isOpen, setOpen] = useState(false);
+  const closeBtnIcon = isOpen ? (
+    <i className="fas fa-times"></i>
+  ) : (
+    <i className="fas fa-bars"></i>
+  );
 
   return (
     <header className={isOpen ? styles.openHeader : ""}>
@@ -32,35 +36,35 @@ function Header() {
             id="ul-home"
             onClick={clickHandler}
           >
-            <ButtonScrollTo toId="home"> Home </ButtonScrollTo>
+            <ButtonScrollTo toId="home" menu={isOpen}> Home </ButtonScrollTo>
           </ul>
           <ul
             className={isActive.about ? "active" : ""}
             id="ul-about"
             onClick={clickHandler}
           >
-            <ButtonScrollTo toId="about"> About </ButtonScrollTo>
+            <ButtonScrollTo toId="about" menu={isOpen}> About </ButtonScrollTo>
           </ul>
           <ul
             className={isActive.skills ? "active" : ""}
             id="ul-skills"
             onClick={clickHandler}
           >
-            <ButtonScrollTo toId="skills"> Skills </ButtonScrollTo>
+            <ButtonScrollTo toId="skills" menu={isOpen}> Skills </ButtonScrollTo>
           </ul>
           <ul
             className={isActive.education ? "active" : ""}
             id="ul-education"
             onClick={clickHandler}
           >
-            <ButtonScrollTo toId="education"> Education </ButtonScrollTo>
+            <ButtonScrollTo toId="education" menu={isOpen}> Education </ButtonScrollTo>
           </ul>
           <ul
             className={isActive.gfx ? "active" : ""}
             id="ul-gfx"
             onClick={clickHandler}
           >
-            <ButtonScrollTo toId="gfx"> GFX </ButtonScrollTo>
+            <ButtonScrollTo toId="gfx" menu={isOpen}> GFX </ButtonScrollTo>
           </ul>
         </li>
       </nav>

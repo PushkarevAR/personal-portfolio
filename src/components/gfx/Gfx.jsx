@@ -6,7 +6,7 @@ function Gfx(props) {
         <>
         <div className={styles.gfx}>
             <i className="fas fa-tools"></i>
-            <p id={styles.description}>in development...</p>
+            <p id={styles.description}>soon</p>
         </div>
         
         </>
