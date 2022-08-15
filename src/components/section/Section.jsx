@@ -84,7 +84,7 @@ const skills = {
       />
       <Skill
         icon={<i className="fab fa-react"></i>}
-        title={"JavaScript (ES6), React"}
+        title={"JavaScript (ES6), TypeScript, React"}
       />
       <Skill
         icon={<i className="fab fa-github-alt"></i>}

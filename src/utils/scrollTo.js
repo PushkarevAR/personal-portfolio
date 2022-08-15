@@ -7,7 +7,7 @@ const logError = () =>
 
 const getElementPosition = (element) => element.offsetTop;
 
-export const scrollTo = ({ id, ref = null, duration = 3000, menu = false }) => {
+export const scrollTo = ({ id, ref = null, duration = 120, menu = false }) => {
   // the position of the scroll bar before the user clicks the button
   //   const initialPosition = window.scrollY;
   const initialPosition = window.scrollY;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Header.module.scss";
+import styles from "./header.module.scss";
 import ButtonScrollTo from "../button/ButtonScrollTo";
 
 function Header() {
